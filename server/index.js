@@ -42,7 +42,7 @@ app.post("/books",(req,res)=>{
 
   db.query(q,[values],(err,data)=>{
     if(err) return res.json(err);
-    return res.json("Books has been updated successfully!");
+    return res.json("Books has been updated successfully!!");
   })
 })
 app.delete("/books/:id", (req, res) => {
